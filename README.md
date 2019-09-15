@@ -1,4 +1,4 @@
-## Flip Clock
+## COeXIST
 
 ![Flip Clock preview](https://github.com/braindef/coexist-counter/blob/master/src/screenshot.png)
 
