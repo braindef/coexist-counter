@@ -29,13 +29,20 @@ var FlipClock = function(selector) {
 	return {
 		update: function(number) {
 			if (number == me.nextNumber)
+      {
 				return;
-
-
-
+      }
 			me.nextNumber = number;
 			me.frontTopEl.addClass('flip-top-animate');
 			me.backTopEl.find('span').html(me.nextNumber);
+			
+			var color = ["#f90016ff", "#ff9d36ff", "#fff34eff", "#fff34eff", "#00d9eaff", "#3c44d9ff", "#8422b2ff", "#f900d0ff", "#f900d0ff", "#fffffff"]; 
+      var colorNumber = Math.floor(Math.random() * 10);
+      if ( color == "#f900d0ff" ) colorNumber = Math.floor(Math.random() * 10);
+			me.frontTopEl.find("span")[0].style.color=color[colorNumber];
+			me.frontBottomEl.find("span")[0].style.color=color[colorNumber];
+			me.backTopEl.find("span")[0].style.color=color[colorNumber];
+			me.backBottomEl.find("span")[0].style.color=color[colorNumber];
 		}
 	}
 };
@@ -47,12 +54,14 @@ var FlipClockManager = function(selector, cls) {
 	FlipClockManager.idx = (FlipClockManager.idx || 0) + 1;
 
 	var generateCounterHtml = function(id, cls) {
-		return ['<div id="' + id + '" class="flip-clock ' + cls + '">',
-					  '<div class="flip-top flip-front"><span>0</span></div>',
-					  '<div class="flip-top flip-back"><span>0</span></div>',
-					  '<div class="flip-bottom flip-front"><span>0</span></div>',
-					  '<div class="flip-bottom flip-back"><span>0</span></div>',
-				  '</div>'].join('');
+    template = ['<div id="' + id + '" class="flip-clock ' + cls + '">',
+					  '<div class="flip-top flip-front"><span style="color:blue">0</span></div>',
+					  '<div class="flip-top flip-back"><span style="color:blue">0</span></div>',
+					  '<div class="flip-bottom flip-front"><span style="color:blue">0</span></div>',
+					  '<div class="flip-bottom flip-back"><span style="color:blue">0</span></div>',
+				    '</div>'].join('');
+
+		return template;
 	}
 
 	var initializeClock = function(callback) {
