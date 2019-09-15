@@ -1,5 +1,5 @@
 ## Flip Clock
 
-![Flip Clock preview](http://i.imgur.com/eigE2iA.gif)
+![Flip Clock preview](https://github.com/braindef/coexist-counter/blob/master/src/screenshot.png)
 
-[Live Demo](https://cdn.rawgit.com/bojandevic/flip-clock/master/examples/index.html)
+[Live Demo](https://0x8.ch)
