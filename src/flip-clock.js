@@ -31,6 +31,8 @@ var FlipClock = function(selector) {
 			if (number == me.nextNumber)
 				return;
 
+
+
 			me.nextNumber = number;
 			me.frontTopEl.addClass('flip-top-animate');
 			me.backTopEl.find('span').html(me.nextNumber);
@@ -55,15 +57,30 @@ var FlipClockManager = function(selector, cls) {
 
 	var initializeClock = function(callback) {
 		var mainHTML = '';
-		mainHTML += generateCounterHtml('fc-hours' + FlipClockManager.idx, cls);
-		mainHTML += generateCounterHtml('fc-minutes' + FlipClockManager.idx,cls);
-		mainHTML += generateCounterHtml('fc-seconds' + FlipClockManager.idx, cls);
+//		mainHTML += generateCounterHtml('fc-hours' + FlipClockManager.idx, cls);
+//		mainHTML += generateCounterHtml('fc-minutes' + FlipClockManager.idx,cls);
+//		mainHTML += generateCounterHtml('fc-seconds' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('c' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('o' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('e' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('x' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('i' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('s' + FlipClockManager.idx, cls);
+		mainHTML += generateCounterHtml('t' + FlipClockManager.idx, cls);
 
 		me.mainEl.html(mainHTML);
 
-		me.hours   = new FlipClock('#fc-hours'   + FlipClockManager.idx);
-		me.minutes = new FlipClock('#fc-minutes' + FlipClockManager.idx);
-		me.seconds = new FlipClock('#fc-seconds' + FlipClockManager.idx);
+//		me.hours   = new FlipClock('#fc-hours'   + FlipClockManager.idx);
+//		me.minutes = new FlipClock('#fc-minutes' + FlipClockManager.idx);
+//		me.seconds = new FlipClock('#fc-seconds' + FlipClockManager.idx);
+
+		me.c = new FlipClock('#c' + FlipClockManager.idx);
+		me.o = new FlipClock('#o' + FlipClockManager.idx);
+		me.e = new FlipClock('#e' + FlipClockManager.idx);
+		me.x = new FlipClock('#x' + FlipClockManager.idx);
+		me.i = new FlipClock('#i' + FlipClockManager.idx);
+		me.s = new FlipClock('#s' + FlipClockManager.idx);
+		me.t = new FlipClock('#t' + FlipClockManager.idx);
 
 		if (me.currentInterval)
 			clearInterval(me.currentInterval);
@@ -74,30 +91,63 @@ var FlipClockManager = function(selector, cls) {
 	return {
 		currentTime: function() {
 			initializeClock(function() {
-				var date = new Date();
+//				var date = new Date();
 
-				me.hours.update(date.getHours());
-				me.minutes.update(date.getMinutes());
-				me.seconds.update(date.getSeconds());
+//				me.hours.update(date.getHours());
+//				me.minutes.update(date.getMinutes());
+//				me.seconds.update(date.getSeconds());
+          me.c.update(getC());  //☪☸e✡i☯†
+          me.o.update(getO());
+          me.e.update(getE());
+          me.x.update(getX());
+          me.i.update(getI());
+          me.s.update(getS());
+          me.t.update(getT());
 			});
-		},
-		countdownToDate: function(countdownDate) {
-			initializeClock(function() {
-				var dateDiff = Math.round((countdownDate.getTime() - new Date().getTime()) / 1000);
-
-				me.hours.update(Math.round(dateDiff / 3600));
-				me.minutes.update(Math.round(dateDiff / 60) % 60);
-				me.seconds.update(dateDiff % 60);
-			});
-		},
-		countFromDate: function(startDate) {
-			initializeClock(function() {
-				var dateDiff = Math.round((new Date().getTime() - startDate.getTime()) / 1000);
-
-				me.hours.update(Math.round(dateDiff / 3600));
-				me.minutes.update(Math.round(dateDiff / 60) % 60);
-				me.seconds.update(dateDiff % 60);
-			});
-		}
+		},	
+	}
+	
+	function getC()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['☪', 'C','c', '☪','☪', 'C','☪', 'C','☪', 'C'];
+	  return c[number];
+	}
+	function getO()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['☸', 'o','o', '☸','☸', 'o', '☸', 'o', '☸', 'o'];
+	  return c[number];
+	}
+	
+	function getE()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['e', 'e','e', '⚗','☪', '🔬','⚗', '🔭','e', 'e'];
+	  return c[number];
+	}
+	function getX()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['✡', '✡','x', 'X', '✡', '✡' ,'x', 'x', 'x', 'x'];
+	  return c[number];
+	}
+	function getI()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['i', 'I','i', 'I','i', 'I','i', 'I','i', 'I'];
+	  return c[number];
+	}
+	function getS()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['☯', '☯', '☯', '☯', '☯', 's', 's', '࿕','s', 's'];
+	  return c[number];
+	}
+	function getT()
+	{
+	  var number = Math.floor(Math.random() * 10);
+	  var c = ['†', '†', '†', '†', '†', '†', 't', 't', 'T', 'T'];
+	  return c[number];
 	}
 };
