@@ -1,22 +1,34 @@
+Landevs Licence v0.9.0
 
-The MIT License (MIT)
+You are allowed to use this Software in this repostitory under the same terms as GPL but...
 
-Copyright (c) 2015 bojandevic
+...but only if you:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+- Don't have acces or even own a Weapon, does not matter if Atomic Bomb, Tank ... Gun, Knife
+ - (maybe except kitchen knife or swiss army knife for eg. fixing stuff like computers, toaster, sex-toys...)  
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- If you are not older than the guy you get this repository from
+ - (I am borin in 1978, special cases will be granted by me)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- If you don't attack people (especially not younger), wheater physically nor verbally nor with things like Cyberwar
+ - (if you just defendet yourself it is ok, but if you agree in revenge then they will blackmail you with that)
+ - throwing stuffed animals is ok (be carefull plush tux are airodynamic so they loose their impulse slower)
+
+- If you try your best to avoid CO2 emissions
+
+- If you agree to the Hippocratic oath
+
+- If you honestly try not to be ignorant to younger people
+
+- If you are not pedophile, neighter in thoughts nor physical
+
+- If you help to defend all younger people against cyber-rape or real rape
+
+- If you respect feminism but also that young boys (especialy in male dominated economies) needs protection too
+
+- If you watch only "kosher" Porn if at all
+ - (normally you will know if the video was made consensual or not)
+
+These rules need to be satisfied for the period of one year back from the current date.
+
+Marc Landolt, Aarau, 2019-09-21
